@@ -6,7 +6,6 @@ const Insights: React.FC = () => {
 
   const insights = useMemo(() => {
     const expenses = transactions.filter(t => t.type === 'expense');
-    const incomes = transactions.filter(t => t.type === 'income');
 
     // Highest spending category
     const categorySpending = expenses.reduce((acc, t) => {

@@ -17,7 +17,7 @@ const mockTransactions: Transaction[] = [
 
 export const useStore = create<AppState>()(
   persist(
-    (set, get) => ({
+    (set) => ({
       transactions: mockTransactions,
       role: 'viewer',
       filters: {},

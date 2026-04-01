@@ -1,6 +1,5 @@
 import React, { useState, useMemo } from 'react';
 import { useStore } from '../store';
-import { Transaction } from '../types';
 
 const Transactions: React.FC = () => {
   const { transactions, role, filters, setFilters, deleteTransaction } = useStore();
